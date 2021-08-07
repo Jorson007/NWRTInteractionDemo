@@ -1,2 +1,10 @@
 # NWRTInteractionDemo
 基于MQTT的实时互动Demo
+使用说明：
+拉取代码后进入文件夹执行pod install安装MQTT和AFNetworking SDK；
+先在A模拟器上运行demo，
+然后修改ViewController.m文件里面initData函数里的self.username为user2或者user3，再次在模拟器B上运行demo；
+在A模拟器上点击添加按钮会在主页上添加一个图形，同时会同步到B模拟器上，
+拖动A模拟器上的图形也可以同步B模拟器上的图形；
+点击清空按钮可以消除页面上的所有图形；
+最多可以添加五个图形。
