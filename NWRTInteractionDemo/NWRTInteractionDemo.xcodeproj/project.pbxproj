@@ -1,0 +1,447 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B239BFB9F654D938DACE30D8 /* libPods-NWRTInteractionDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 447BDEEEF2081F83C5124EE8 /* libPods-NWRTInteractionDemo.a */; };
+		F8052C5326BE7778008B5FDC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F8052C5226BE7778008B5FDC /* AppDelegate.m */; };
+		F8052C5926BE7778008B5FDC /* NRTMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8052C5826BE7778008B5FDC /* NRTMainViewController.m */; };
+		F8052C5C26BE7778008B5FDC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8052C5A26BE7778008B5FDC /* Main.storyboard */; };
+		F8052C5E26BE7778008B5FDC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8052C5D26BE7778008B5FDC /* Assets.xcassets */; };
+		F8052C6126BE7778008B5FDC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8052C5F26BE7778008B5FDC /* LaunchScreen.storyboard */; };
+		F8052C6426BE7779008B5FDC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F8052C6326BE7779008B5FDC /* main.m */; };
+		F8052C7726BE7DAA008B5FDC /* NWDynamicShapeView.m in Sources */ = {isa = PBXBuildFile; fileRef = F8052C7626BE7DAA008B5FDC /* NWDynamicShapeView.m */; };
+		F87FCE8826C15608000B3DB5 /* NRTLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F87FCE8726C15608000B3DB5 /* NRTLoginViewController.m */; };
+		F87FCE8F26C15795000B3DB5 /* next.png in Resources */ = {isa = PBXBuildFile; fileRef = F87FCE8D26C15795000B3DB5 /* next.png */; };
+		F87FCE9026C15795000B3DB5 /* denglu.png in Resources */ = {isa = PBXBuildFile; fileRef = F87FCE8E26C15795000B3DB5 /* denglu.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		447BDEEEF2081F83C5124EE8 /* libPods-NWRTInteractionDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NWRTInteractionDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9268C4C3D1E874888514E3D /* Pods-NWRTInteractionDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NWRTInteractionDemo.release.xcconfig"; path = "Target Support Files/Pods-NWRTInteractionDemo/Pods-NWRTInteractionDemo.release.xcconfig"; sourceTree = "<group>"; };
+		E2858965D0BB5558DCD5968E /* Pods-NWRTInteractionDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NWRTInteractionDemo.debug.xcconfig"; path = "Target Support Files/Pods-NWRTInteractionDemo/Pods-NWRTInteractionDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		F8052C4E26BE7778008B5FDC /* NWRTInteractionDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NWRTInteractionDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8052C5126BE7778008B5FDC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F8052C5226BE7778008B5FDC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F8052C5726BE7778008B5FDC /* NRTMainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NRTMainViewController.h; sourceTree = "<group>"; };
+		F8052C5826BE7778008B5FDC /* NRTMainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NRTMainViewController.m; sourceTree = "<group>"; };
+		F8052C5B26BE7778008B5FDC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F8052C5D26BE7778008B5FDC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F8052C6026BE7778008B5FDC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F8052C6226BE7778008B5FDC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F8052C6326BE7779008B5FDC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F8052C7526BE7DAA008B5FDC /* NWDynamicShapeView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NWDynamicShapeView.h; sourceTree = "<group>"; };
+		F8052C7626BE7DAA008B5FDC /* NWDynamicShapeView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NWDynamicShapeView.m; sourceTree = "<group>"; };
+		F87FCE8626C15608000B3DB5 /* NRTLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NRTLoginViewController.h; sourceTree = "<group>"; };
+		F87FCE8726C15608000B3DB5 /* NRTLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NRTLoginViewController.m; sourceTree = "<group>"; };
+		F87FCE8D26C15795000B3DB5 /* next.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = next.png; sourceTree = "<group>"; };
+		F87FCE8E26C15795000B3DB5 /* denglu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = denglu.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F8052C4B26BE7778008B5FDC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B239BFB9F654D938DACE30D8 /* libPods-NWRTInteractionDemo.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		29E0FD5C4F2CC44389BCA464 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				447BDEEEF2081F83C5124EE8 /* libPods-NWRTInteractionDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		94F570C5B99BEC5CE6C455B1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E2858965D0BB5558DCD5968E /* Pods-NWRTInteractionDemo.debug.xcconfig */,
+				C9268C4C3D1E874888514E3D /* Pods-NWRTInteractionDemo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F8052C4526BE7778008B5FDC = {
+			isa = PBXGroup;
+			children = (
+				F8052C5026BE7778008B5FDC /* NWRTInteractionDemo */,
+				F8052C4F26BE7778008B5FDC /* Products */,
+				94F570C5B99BEC5CE6C455B1 /* Pods */,
+				29E0FD5C4F2CC44389BCA464 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F8052C4F26BE7778008B5FDC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F8052C4E26BE7778008B5FDC /* NWRTInteractionDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F8052C5026BE7778008B5FDC /* NWRTInteractionDemo */ = {
+			isa = PBXGroup;
+			children = (
+				F87FCE8C26C1576C000B3DB5 /* images */,
+				F8052C6F26BE784D008B5FDC /* VC */,
+				F8052C6E26BE7846008B5FDC /* View */,
+				F8052C6D26BE783D008B5FDC /* Model */,
+				F8052C5126BE7778008B5FDC /* AppDelegate.h */,
+				F8052C5226BE7778008B5FDC /* AppDelegate.m */,
+				F8052C5A26BE7778008B5FDC /* Main.storyboard */,
+				F8052C5D26BE7778008B5FDC /* Assets.xcassets */,
+				F8052C5F26BE7778008B5FDC /* LaunchScreen.storyboard */,
+				F8052C6226BE7778008B5FDC /* Info.plist */,
+				F8052C6326BE7779008B5FDC /* main.m */,
+			);
+			path = NWRTInteractionDemo;
+			sourceTree = "<group>";
+		};
+		F8052C6D26BE783D008B5FDC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F8052C6E26BE7846008B5FDC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F8052C7526BE7DAA008B5FDC /* NWDynamicShapeView.h */,
+				F8052C7626BE7DAA008B5FDC /* NWDynamicShapeView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F8052C6F26BE784D008B5FDC /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				F87FCE8626C15608000B3DB5 /* NRTLoginViewController.h */,
+				F87FCE8726C15608000B3DB5 /* NRTLoginViewController.m */,
+				F8052C5726BE7778008B5FDC /* NRTMainViewController.h */,
+				F8052C5826BE7778008B5FDC /* NRTMainViewController.m */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		F87FCE8C26C1576C000B3DB5 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				F87FCE8E26C15795000B3DB5 /* denglu.png */,
+				F87FCE8D26C15795000B3DB5 /* next.png */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F8052C4D26BE7778008B5FDC /* NWRTInteractionDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F8052C6726BE7779008B5FDC /* Build configuration list for PBXNativeTarget "NWRTInteractionDemo" */;
+			buildPhases = (
+				97BC2A1BB5AA2A17F3FB6FDA /* [CP] Check Pods Manifest.lock */,
+				F8052C4A26BE7778008B5FDC /* Sources */,
+				F8052C4B26BE7778008B5FDC /* Frameworks */,
+				F8052C4C26BE7778008B5FDC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NWRTInteractionDemo;
+			productName = NWRTInteractionDemo;
+			productReference = F8052C4E26BE7778008B5FDC /* NWRTInteractionDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F8052C4626BE7778008B5FDC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1210;
+				TargetAttributes = {
+					F8052C4D26BE7778008B5FDC = {
+						CreatedOnToolsVersion = 12.1;
+					};
+				};
+			};
+			buildConfigurationList = F8052C4926BE7778008B5FDC /* Build configuration list for PBXProject "NWRTInteractionDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F8052C4526BE7778008B5FDC;
+			productRefGroup = F8052C4F26BE7778008B5FDC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F8052C4D26BE7778008B5FDC /* NWRTInteractionDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F8052C4C26BE7778008B5FDC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8052C6126BE7778008B5FDC /* LaunchScreen.storyboard in Resources */,
+				F8052C5E26BE7778008B5FDC /* Assets.xcassets in Resources */,
+				F87FCE8F26C15795000B3DB5 /* next.png in Resources */,
+				F87FCE9026C15795000B3DB5 /* denglu.png in Resources */,
+				F8052C5C26BE7778008B5FDC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		97BC2A1BB5AA2A17F3FB6FDA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NWRTInteractionDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F8052C4A26BE7778008B5FDC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8052C5926BE7778008B5FDC /* NRTMainViewController.m in Sources */,
+				F8052C7726BE7DAA008B5FDC /* NWDynamicShapeView.m in Sources */,
+				F8052C5326BE7778008B5FDC /* AppDelegate.m in Sources */,
+				F8052C6426BE7779008B5FDC /* main.m in Sources */,
+				F87FCE8826C15608000B3DB5 /* NRTLoginViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F8052C5A26BE7778008B5FDC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F8052C5B26BE7778008B5FDC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F8052C5F26BE7778008B5FDC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F8052C6026BE7778008B5FDC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F8052C6526BE7779008B5FDC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F8052C6626BE7779008B5FDC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F8052C6826BE7779008B5FDC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E2858965D0BB5558DCD5968E /* Pods-NWRTInteractionDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PV455DVBQ9;
+				INFOPLIST_FILE = NWRTInteractionDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kwni.NWRTInteractionDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F8052C6926BE7779008B5FDC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C9268C4C3D1E874888514E3D /* Pods-NWRTInteractionDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PV455DVBQ9;
+				INFOPLIST_FILE = NWRTInteractionDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kwni.NWRTInteractionDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F8052C4926BE7778008B5FDC /* Build configuration list for PBXProject "NWRTInteractionDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8052C6526BE7779008B5FDC /* Debug */,
+				F8052C6626BE7779008B5FDC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F8052C6726BE7779008B5FDC /* Build configuration list for PBXNativeTarget "NWRTInteractionDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8052C6826BE7779008B5FDC /* Debug */,
+				F8052C6926BE7779008B5FDC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F8052C4626BE7778008B5FDC /* Project object */;
+}
