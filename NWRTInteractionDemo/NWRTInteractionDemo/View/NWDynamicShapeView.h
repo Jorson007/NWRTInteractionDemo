@@ -13,6 +13,8 @@ typedef NS_ENUM(NSInteger,NWShapeViewType){
     NWShapeViewType_Circle,
     NWShapeViewType_Triangle,
     NWShapeViewType_Rect,
+    NWShapeViewType_ReverseTriangle,
+    NWShapeViewType_Oval
 };
 
 @protocol NWRefreshViewOriginProtocal <NSObject>
