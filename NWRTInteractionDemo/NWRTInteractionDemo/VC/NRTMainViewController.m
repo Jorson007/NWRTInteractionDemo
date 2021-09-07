@@ -167,16 +167,17 @@
 -(void)addShape{
     if(!self.shapeNum){
         self.shapeNum = 1;
+    }else{
+        self.shapeNum++;
     }
-    self.shapeNum++;
-    if(self.shapeNum > 6){
+    if(self.shapeNum >= 6){
         return;
     }
     CGFloat baseX = Screen_Width*arc4random()/UINT32_MAX;
     CGFloat baseY = Screen_Height*arc4random()/UINT32_MAX;
     
     CGFloat sizeWidth = 30;
-    int type = self.shapeNum %3;
+    int type = (int)self.shapeNum - 1;
     [self addShapeToViewByType:type addX:baseX addY:baseY addWidth:sizeWidth andTag:self.shapeNum needMessage:YES];
 }
 
@@ -209,6 +210,12 @@
             break;
         case NWShapeViewType_Circle:
             view.type = NWShapeViewType_Circle;
+            break;
+        case NWShapeViewType_ReverseTriangle:
+            view.type = NWShapeViewType_ReverseTriangle;
+            break;
+        case NWShapeViewType_Oval:
+            view.type = NWShapeViewType_Oval;
             break;
         default:
             view.type = NWShapeViewType_Circle;
