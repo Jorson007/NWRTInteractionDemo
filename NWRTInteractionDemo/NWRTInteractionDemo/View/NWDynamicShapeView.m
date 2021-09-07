@@ -31,6 +31,12 @@
         case NWShapeViewType_Circle:
             [self drawCircle:context fillcolor:[UIColor orangeColor] radius:2*M_PI];
             break;
+        case NWShapeViewType_ReverseTriangle:
+            [self drawReverseTriangle:context lineColor:[UIColor grayColor] fillColor:[UIColor grayColor] lineWidth:1];
+            break;
+        case NWShapeViewType_Oval:
+            [self drawOval:context fillcolor:[UIColor greenColor]];
+            break;
     }
 }
 
@@ -40,7 +46,6 @@
  *context   当前上下文
  *fillColor 填充色
  *radius    弧度
- *point     圆心点坐标
  */
 - (void)drawCircle:(CGContextRef)context
          fillcolor:(UIColor *)fillColor
@@ -48,6 +53,19 @@
     CGContextSetFillColorWithColor(context, fillColor.CGColor);
     CGContextSetLineWidth(context, 1.0);
     CGContextAddArc(context, self.bounds.size.width/2, self.bounds.size.width/2, self.bounds.size.width/2, 0, radius, 0);
+    CGContextDrawPath(context, kCGPathFill);
+}
+
+/*
+ *画椭圆
+ *context   当前上下文
+ *fillColor 填充色
+ */
+- (void)drawOval:(CGContextRef)context
+       fillcolor:(UIColor *)fillColor{
+    CGContextSetFillColorWithColor(context, fillColor.CGColor);
+    CGContextSetLineWidth(context, 1.0);
+    CGContextAddEllipseInRect(context,CGRectMake(self.bounds.origin.x, self.bounds.origin.y+5, self.bounds.size.width, self.bounds.size.height-10));
     CGContextDrawPath(context, kCGPathFill);
 }
 
@@ -76,6 +94,38 @@
     points[0] = CGPointMake(point.x, point.y-self.frame.size.height/2);
     points[1] = CGPointMake(point.x-self.frame.size.width/2, point.y+self.frame.size.height/2);
     points[2] = CGPointMake(point.x+self.frame.size.width/2, point.y+self.frame.size.height/2);
+    
+    CGContextAddLines(context, points, 3);
+    CGContextClosePath(context);
+    CGContextDrawPath(context, kCGPathFill);
+    CGContextRestoreGState(context);
+}
+
+
+/*
+ *倒三角形
+ *context       当前上下文
+ *lineColor     边框颜色
+ *fillColor     填充颜色
+ *pointArr      三个点的坐标
+ *lineWidth     边框宽度
+ */
+- (void)drawReverseTriangle:(nullable CGContextRef)context
+                  lineColor:(nullable UIColor *)lineColor
+                  fillColor:(nullable UIColor *)fillColor
+                  lineWidth:(CGFloat)lineWidth {
+    CGContextSaveGState(context);
+    CGContextSetShouldAntialias(context, YES);
+    CGContextSetLineWidth(context, lineWidth);
+    CGContextSetStrokeColorWithColor(context, lineColor.CGColor);
+    CGContextSetFillColorWithColor(context, fillColor.CGColor);
+    
+    CGPoint point = CGPointMake(self.bounds.size.width/2, self.bounds.size.height/2);
+    
+    CGPoint points[3];
+    points[0] = CGPointMake(point.x, point.y+self.frame.size.height/2);
+    points[1] = CGPointMake(point.x-self.frame.size.width/2, point.y-self.frame.size.height/2);
+    points[2] = CGPointMake(point.x+self.frame.size.width/2, point.y-self.frame.size.height/2);
     
     CGContextAddLines(context, points, 3);
     CGContextClosePath(context);
